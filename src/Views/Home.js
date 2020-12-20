@@ -1,14 +1,13 @@
-import imageCarousel from "../Components/imageCarousel";
+import ImageCarousel from "../Components/ImageCarousel";
+import Cards from "../Components/Cards";
 
 function Home() {
     return (
-        <div>
-            <imageCarousel />
-            <h1>
-                <h4>This is home component</h4>
+        <>
+            <ImageCarousel />
+            <Cards />
 
-            </h1>
-        </div>
+        </>
     )
 }
 export default Home; 

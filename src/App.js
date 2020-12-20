@@ -7,7 +7,7 @@ import Contacts from "./Views/Contacts";
 import Signup from "./Views/Signup";
 import Articles from "./Views/Articles";
 import Reviews from "./Views/Reviews";
-import imageCarousel from "./Components/imageCarousel";
+
 
 function App() {
   return (
