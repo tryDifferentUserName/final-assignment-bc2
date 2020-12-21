@@ -8,10 +8,10 @@ h1{
 .cards__container{
     display: flex;
     flex-flow: column;
-align-items: center;
-max-width: 1120px;
-width: 90%;
-margin: 0 auto;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
 }
 .cards__wrapper{
     position: relative;

@@ -1,10 +1,10 @@
+import CardsArticles from "../Components/CardsArticles";
 
-import Cards from "../Components/Cards";
 
 function Articles() {
     return (
         <>
-            <Cards />
+            <CardsArticles />
         </>
     )
 }

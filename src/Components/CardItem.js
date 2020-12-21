@@ -7,11 +7,10 @@ function CardItem(props) {
             <li className="cards__item">
                 <Link
                     className="cards__item__link" to='{props.path}'>
-                    <figure className="cards__item__pic-wrap">
-                        <img src={props.src} alt="" className="cards__item__img" />
-                    </figure>
+                    <img src={props.src} alt="" className="cards__item__img" />
                     <div className="cards__item__info">
-                        <h5 className="cards__item__text" >{props.text}</h5>
+                        <h5 className="cards__item__title">{props.title}</h5>
+                        <h6 className="cards__item__text" >{props.text}</h6>
                     </div>
                 </Link>
             </li>

@@ -1,0 +1,15 @@
+.cards{
+    padding: 4rem;
+    background: #fff;
+}
+
+.cards__container{
+    display: flex;
+}
+.cards__item__link{
+    display: flex;
+    flex-direction: row;
+}
+.cards__item__img:hover{
+    transform: scale(1.1);
+}
