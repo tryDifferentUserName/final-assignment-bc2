@@ -1,11 +1,23 @@
-function Signup() {
-    return (
-        <div>
-            <h1>
-                <h4>This is Signup component</h4>
+import React, { useState } from "react";
+import RegisterForm from '../Components/RegisterForm';
+import SuccessForm from "../Components/SuccessForm";
+import '../Components/Form.css'
 
-            </h1>
-        </div>
+const Signup = () => {
+    const [isSubmitted, setIsSubmitted] = useState(false);
+    function submitForm() {
+        setIsSubmitted(true);
+    }
+    return (
+        <>
+            <div className='form-container'>
+                {!isSubmitted ?
+                    (<RegisterForm submitForm={submitForm} />
+                    ) : (
+                        <SuccessForm />
+                    )}
+            </div>
+        </>
     )
 }
 export default Signup; 

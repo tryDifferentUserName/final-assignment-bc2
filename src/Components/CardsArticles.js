@@ -1,6 +1,8 @@
 import React from "react";
 import CardItem from "./CardItem";
-import './CardsArticles.css'
+//import './CardsArticles.css'
+import { Link } from "react-router-dom";
+
 
 function CardsArticles() {
     return (
@@ -9,11 +11,11 @@ function CardsArticles() {
                 <div className="cards__wrapper">
                     <ul className="cards__items">
                         <CardItem
+                            href="/Views/Article1"
                             src='\Assets\images\cat.jpg'
                             alt=""
                             title='Title'
                             text='insert some meaningful text'
-                            path='/Article-1'
                         />
                     </ul>
                 </div>
@@ -24,7 +26,7 @@ function CardsArticles() {
                             alt=""
                             title='Title'
                             text='insert some meaningful text'
-                            path='/Article-1'
+                            path='/Article1'
                         />
                     </ul>
                 </div>
@@ -35,7 +37,7 @@ function CardsArticles() {
                             alt=""
                             title='Title'
                             text='insert some meaningful text'
-                            path='/Article-1'
+                            path='/Article1'
                         />
                     </ul>
                 </div>

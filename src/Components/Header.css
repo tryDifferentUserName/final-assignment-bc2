@@ -1,0 +1,15 @@
+header{
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo{
+    cursor: pointer;
+}
+.nav-link {
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s ease 0s;
+}

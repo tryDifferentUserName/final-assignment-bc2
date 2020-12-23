@@ -1,12 +1,31 @@
 import React from 'react';
-import ReactFancyBox from 'react-fancybox'
-import 'react-fancybox/lib/fancybox.css'
+import './ImageFancyBox.css'
 
-function ReactFancyBox() {
+function ImageFancyBox({ imageData }) {
+
     return (
-        <div>
-
+        <div className="container">
+            <div className="row">
+                <div className="col-xs-6">
+                    <img className="big-img" src={imageData[0].imgSrc} alt="" />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-xs-12">
+                    <img className="small-img" src={imageData[1].imgSrc} alt="" />
+                    <img className="small-img" src={imageData[2].imgSrc} alt="" />
+                    <img className="small-img" src={imageData[3].imgSrc} alt="" />
+                </div>
+            </div>
+            <div className="row">
+                <div className="col-xs-12">
+                    <img className="small-img" src={imageData[4].imgSrc} alt="" />
+                    <img className="small-img" src={imageData[5].imgSrc} alt="" />
+                    <img className="small-img" src={imageData[5].imgSrc} alt="" />
+                </div>
+            </div>
         </div>
     )
 }
-export default ReactFancyBox;
+
+export default ImageFancyBox;
