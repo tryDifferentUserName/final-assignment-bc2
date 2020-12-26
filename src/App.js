@@ -6,7 +6,7 @@ import Home from "./Views/Home";
 import Contacts from "./Views/Contacts";
 import Signup from "./Views/Signup";
 import Articles from "./Views/Articles";
-import Reviews from "./Views/Reviews";
+import ReviewForm from "./Views/ReviewForm";
 import Article1 from "./Views/Article1";
 
 
@@ -26,8 +26,8 @@ function App() {
             <Route path='/Article1'>
               <Article1 />
             </Route>
-            <Route path='/Reviews'>
-              <Reviews />
+            <Route path='/'>
+              <ReviewForm />
             </Route>
             <Route path='/Signup'>
               <Signup />

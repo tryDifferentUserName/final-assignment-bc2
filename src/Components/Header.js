@@ -13,7 +13,7 @@ function Header() {
                         <NavLink className="nav-link" activeClassName="active" to="/Contacts">About us</NavLink>
                     </ul>
                 </nav>
-                <NavLink className="nav-link" activeClassName="active" to="/Signup"><button>Register</button></NavLink>
+                <NavLink className="nav-link" activeClassName="active" to="/Signup"><button className="btn btn-outline-dark mb-3">Register</button></NavLink>
             </header>
         </div>
     )

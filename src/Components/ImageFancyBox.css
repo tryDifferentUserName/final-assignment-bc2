@@ -1,6 +1,9 @@
 .big-img{
-    height: 50%;
+    height: 200px;
 }
 .small-img{
-    height: 10%;
+    height: 50px;
+}
+*{
+    padding: 0;
 }

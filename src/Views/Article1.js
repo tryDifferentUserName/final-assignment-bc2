@@ -11,7 +11,7 @@ const data = [
     {
         id: 2,
         name: "",
-        imgSrc: "/Assets/images/cat.jpg"
+        imgSrc: "/Assets/images/img-2.jpg"
     },
     {
         id: 3,
@@ -23,16 +23,7 @@ const data = [
         name: "",
         imgSrc: "/Assets/images/cat.jpg"
     },
-    {
-        id: 5,
-        name: "",
-        imgSrc: "/Assets/images/cat.jpg"
-    },
-    {
-        id: 6,
-        name: "",
-        imgSrc: "/Assets/images/cat.jpg"
-    }
+
 ]
 function Article1() {
     return (

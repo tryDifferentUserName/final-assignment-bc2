@@ -1,27 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ImageFancyBox.css'
 
-function ImageFancyBox({ imageData }) {
-
+const ImageFancyBox = ({ imageData }) => {
+    const [activeIndex, setActiveIndex] = useState(0);
     return (
         <div className="container">
             <div className="row">
                 <div className="col-xs-6">
-                    <img className="big-img" src={imageData[0].imgSrc} alt="" />
+                    <img className="big-img" src={imageData[activeIndex].imgSrc} alt="" />
+                </div>
+                <div className="col-xs-6">
+                    <p>text text text</p>
                 </div>
             </div>
             <div className="row">
                 <div className="col-xs-12">
-                    <img className="small-img" src={imageData[1].imgSrc} alt="" />
-                    <img className="small-img" src={imageData[2].imgSrc} alt="" />
-                    <img className="small-img" src={imageData[3].imgSrc} alt="" />
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-xs-12">
-                    <img className="small-img" src={imageData[4].imgSrc} alt="" />
-                    <img className="small-img" src={imageData[5].imgSrc} alt="" />
-                    <img className="small-img" src={imageData[5].imgSrc} alt="" />
+                    {imageData.map(({ id, imgSrc, name }, i) => {
+                        return (
+                            <img
+                                key={id}
+                                className="small-img"
+                                src={imgSrc}
+                                alt={name}
+                                onClick={() => setActiveIndex(i)} />
+                        )
+                    })}
+
                 </div>
             </div>
         </div>
