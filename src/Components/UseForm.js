@@ -6,7 +6,7 @@ const useForm = (callback, ValidateData) => {
         email: '',
         password: '',
         password2: '',
-        fName: '',
+        fname: '',
         lName: '',
         country: '',
 
@@ -34,7 +34,7 @@ const useForm = (callback, ValidateData) => {
                 callback();
             }
         },
-        [errors]
+        [errors, isSubmitting]
     );
     return { handleChange, values, handleSubmit, errors };
 }

@@ -61,16 +61,16 @@ function RegisterForm({ submitForm }) {
                     {errors.password2 && <p>{errors.password2}</p>}
                 </div>
                 <div className="form-inputs">
-                    <label htmlFor="fName" className="form-label">
+                    <label htmlFor="fname" className="form-label">
                         First name
                     </label>
                     <input
-                        id="fName"
+                        id="fname"
                         type="text"
-                        name="fName"
+                        name="fname"
                         className="form-input"
                         placeholder="Your first name..."
-                        value={values.fName}
+                        value={values.fname}
                         onChange={handleChange} />
                     {errors.fname && <p>{errors.fname}</p>}
                 </div>

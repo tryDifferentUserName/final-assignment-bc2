@@ -1,19 +1,31 @@
-.tabs-nav{
+.nav-tabs{
     display:  flex;
     list-style: none;
     justify-content: space-around;  
 }
-.tabs-nav>li{
-    border-left: 1px solid #1D3557;
-    padding: 1rem;
+.font-color{
+    color: #1D3557;
 }
-.tabs-nav .active{
-    font-weight: bold;
+a:hover{
+    text-decoration: none;
 }
 .tabs-content {
     min-height: 500px;
 }
 .image-about{
     height: auto;
-    width: 80%;
+    width: 80%;  
 }
+.image-about:hover{
+    transform: scale(1.1);
+}
+.tabs-content{
+    padding-top: 2rem;
+}
+li{
+padding: 1rem 2rem 2rem;
+}
+.active{
+    font-weight: bold;
+}
+

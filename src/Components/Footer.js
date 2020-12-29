@@ -22,8 +22,8 @@ function Footer() {
                 <div>
                     <div className="social-icons">
                         <h5>Connect with us</h5>
-                        <div><Link to='/'><FaFacebook size="2em" color="honeydew" /></Link></div><br />
-                        <div><Link to='/'><FaInstagram size="2em" color="honeydew" /></Link></div>
+                        <div><Link to='/'><FaFacebook size="2em" color="honeydew" className="social" /></Link></div><br />
+                        <div><Link to='/'><FaInstagram size="2em" color="honeydew" className="social" /></Link></div>
                     </div>
                 </div>
             </div>

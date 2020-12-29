@@ -30,3 +30,7 @@
     align-items: center;
     justify-content: space-around;
 }
+.social:hover{
+    transform: scale(1.3);
+}
+

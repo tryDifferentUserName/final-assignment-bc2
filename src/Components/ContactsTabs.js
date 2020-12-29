@@ -38,15 +38,15 @@ function ContactsTabs() {
 
     return (
         <div>
-            <ul className="tabs-nav">
-                <li className={activeTab === 1 ? 'active' : ''}>
-                    <a href="# " onClick={() => changeActiveTab(1)}>About In vino veritas</a>
+            <ul className="nav nav-tabs">
+                <li className={activeTab === 1 ? 'active' : ''} >
+                    <a className="font-color" href="# " onClick={() => changeActiveTab(1)}>About In vino veritas</a>
                 </li>
                 <li className={activeTab === 2 ? 'active' : ''}>
-                    <a href="# " onClick={() => changeActiveTab(2)}>How It Works</a>
+                    <a className="font-color" href="# " onClick={() => changeActiveTab(2)}>How It Works</a>
                 </li>
                 <li className={activeTab === 3 ? 'active' : ''}>
-                    <a href="# " onClick={() => changeActiveTab(3)}>Contacts</a>
+                    <a className="font-color" href="# " onClick={() => changeActiveTab(3)}>Contacts</a>
                 </li>
             </ul>
             <div className="tabs-content">
@@ -54,7 +54,7 @@ function ContactsTabs() {
                     <div className="col">
                         {tabImgContent}
                     </div>
-                    <div className="col">
+                    <div className="col ">
                         {tabContent}
                     </div>
                 </div>
