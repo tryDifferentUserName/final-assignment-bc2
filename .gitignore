@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.env
+node_modules
+api_key='AIzaSyAdpOoSaQq17tanEsp1l8R7j9KvC6MOixw'
