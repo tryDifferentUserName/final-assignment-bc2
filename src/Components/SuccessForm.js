@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 
 const SuccessForm = () => {
     return (
-        <div>
-            <h2>Congratulations registration was successful, continue...</h2>
+        <div className="text-center">
+            <div>Congratulations registration was successful, <Link className="link" to="/">continue...</Link></div>
         </div>
     )
 }

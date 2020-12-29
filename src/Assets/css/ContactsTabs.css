@@ -2,9 +2,11 @@
     display:  flex;
     list-style: none;
     justify-content: space-around;  
+    padding: 1rem 2rem 2rem;
 }
 .font-color{
     color: #1D3557;
+    
 }
 a:hover{
     text-decoration: none;
@@ -22,9 +24,7 @@ a:hover{
 .tabs-content{
     padding-top: 2rem;
 }
-li{
-padding: 1rem 2rem 2rem;
-}
+
 .active{
     font-weight: bold;
 }
