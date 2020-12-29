@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import './ImageFancyBox.css'
+import '../Assets/css/ImageFancyBox.css'
 
 const ImageFancyBox = ({ imageData }) => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -11,6 +11,7 @@ const ImageFancyBox = ({ imageData }) => {
                     <img className="big-img" src={imageData[activeIndex].imgSrc} alt="" />
                 </div>
                 <div className="col-xs-6 description" >
+                    <h3>2019 Big Beat® Red Blend</h3>
                     <h3>Friendly, Red Fruit, Slightly Sweet</h3>
                     <strong>Body: medium
                     <br />Sweetness: slightly sweet

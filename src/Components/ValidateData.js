@@ -1,4 +1,4 @@
-export default function validateInfo(values) {
+export default function ValidateData(values) {
 
     let errors = {}
 
@@ -9,7 +9,7 @@ export default function validateInfo(values) {
     }
     if (!values.password) {
         errors.password = "Fill the password field"
-    } else if (values.password.length <= 8) {
+    } else if (values.password.length < 8) {
         errors.password = "Password needs to be 8 characters or more"
     }
     if (!values.password2) {

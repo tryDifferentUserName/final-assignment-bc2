@@ -28,9 +28,9 @@ function ContactsTabs() {
     }
     let tabImgContent = null;
     if (activeTab === 1) {
-        tabImgContent = <div ><img className="image-about" src="\Assets\images\aboutUs.jpg" /></div>
+        tabImgContent = <div ><img alt="about" className="image-about" src="\Assets\images\aboutUs.jpg" /></div>
     } else if (activeTab === 2) {
-        tabImgContent = <div><img className="image-about" src="\Assets\images\JingleJuiceHero.jpg" /></div>
+        tabImgContent = <div><img alt="about" className="image-about" src="\Assets\images\JingleJuiceHero.jpg" /></div>
     } else if (activeTab === 3) {
         tabImgContent = <div><Map /></div>
     }
@@ -40,13 +40,13 @@ function ContactsTabs() {
         <div>
             <ul className="tabs-nav">
                 <li className={activeTab === 1 ? 'active' : ''}>
-                    <a href="javascript:;" onClick={() => changeActiveTab(1)}>About In vino veritas</a>
+                    <a href="# " onClick={() => changeActiveTab(1)}>About In vino veritas</a>
                 </li>
                 <li className={activeTab === 2 ? 'active' : ''}>
-                    <a href="javascript:;" onClick={() => changeActiveTab(2)}>How It Works</a>
+                    <a href="# " onClick={() => changeActiveTab(2)}>How It Works</a>
                 </li>
                 <li className={activeTab === 3 ? 'active' : ''}>
-                    <a href="javascript:;" onClick={() => changeActiveTab(3)}>Contacts</a>
+                    <a href="# " onClick={() => changeActiveTab(3)}>Contacts</a>
                 </li>
             </ul>
             <div className="tabs-content">

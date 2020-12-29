@@ -24,7 +24,6 @@ function ReviewForm() {
             </div>
             <div className="row">
                 <div className="col">
-                    <h3> Add new review</h3>
                 </div>
             </div>
             <div className="row">

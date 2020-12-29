@@ -1,21 +1,8 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
+import { RiMapPin5Line } from 'react-icons/ri';
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
-
-// function initMap() {
-//     map = new google.maps.Map(document.getElementById('map'), {
-//         center: { lat: 41.763031, lng: -73.044465 },
-//         zoom: 17.75
-//     });
-
-//     google.maps.event.addListener(map, 'click', function (event) {
-//         new google.maps.Marker({
-//             position: event.latLng,
-//             map: map,
-//         });
-//     });
-// }
 
 class SimpleMap extends Component {
     static defaultProps = {
@@ -38,7 +25,7 @@ class SimpleMap extends Component {
                     <AnyReactComponent
                         lat={56.9496}
                         lng={24.1052}
-                        text="My Marker"
+                        text={<RiMapPin5Line size="2rem" color="#E63946" />}
                     />
                 </GoogleMapReact>
             </div>

@@ -1,21 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import useForm from "./UseForm";
-import validate from './ValidateData'
-import './Form.css'
+import useForm from "./useForm";
+import ValidateData from './ValidateData'
+import '../Assets/css/Form.css'
 
 
 function RegisterForm({ submitForm }) {
     const { handleChange, values, handleSubmit, errors }
         = useForm(
             submitForm,
-            validate
+            ValidateData
         );
     return (
         <div className="form-content">
-            <form className="form" onSubmit={handleSubmit} noValidate>
-                <h1>Welcome. Signup for your account and shopping experience. Already have an account?
-                     <br /><Link to="/"> Log in</Link></h1>
+            <form className="form" onSubmit={handleSubmit}>
+                <h1>Welcome. Signup for your account and wine experience. Already have an account?
+                     <br /><Link to="/"> Log in here</Link></h1>
                 <div className="form-inputs">
                     <label htmlFor="email" className="form-label">
                         Email
@@ -72,8 +72,8 @@ function RegisterForm({ submitForm }) {
                         placeholder="Your first name..."
                         value={values.fName}
                         onChange={handleChange} />
+                    {errors.fname && <p>{errors.fname}</p>}
                 </div>
-                {errors.fName && <p>{errors.fName}</p>}
                 <div className="form-inputs">
                     <label htmlFor="lName" className="form-label">
                         Last name
@@ -89,7 +89,8 @@ function RegisterForm({ submitForm }) {
                 </div>
                 <div className="form-inputs">
 
-                    <select name="country" id='country' className="form-input" value={values.country}
+                    <select name="country" id='country' className="form-input"
+                        value={values.country}
                         onChange={handleChange} >
                         <option value="" disabled>Select your country</option>
                         <option value="LV">Latvia</option>

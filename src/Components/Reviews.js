@@ -7,7 +7,7 @@ function Reviews() {
         content = <h4>Loading...</h4>
     }
     else if (reviews.data.length === 0) {
-        content = <h3 className="pl-5">There are no reviews for this product :(</h3>
+        content = <h4 className="pl-5">There are no reviews for this product :(</h4>
 
     }
     else {

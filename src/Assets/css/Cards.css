@@ -28,6 +28,8 @@ h1{
     flex: 1;
     margin: 0 1rem;
     border-radius: 5px;
+    text-decoration: none;
+
 }
 .cards__item__link{
     display: flex;
@@ -36,6 +38,8 @@ h1{
     box-shadow: 0 6px 3px rgba(56, 125, 255, 0.1);
     border-radius: 5px;
     overflow: hidden;
+}
+.cards__item__link:hover{
     text-decoration: none;
 }
 .cards__item__img{
@@ -52,7 +56,11 @@ h1{
 }
 .cards__item__info{
     padding: 20px 30px 30px;
-   
+    text-align: center;
+    color: #1D3557;
+}
+.cards__item__info:hover{
+    color: #E63946;
 }
 .cards__item__text{
     color: #000;
