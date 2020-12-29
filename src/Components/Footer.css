@@ -1,9 +1,11 @@
 .footer-container{
-    padding: 4rem 0 2rem 0;
+    padding: 2rem 0 2rem 0;
     display: flex;
     justify-content: space-around;
     align-self: center;
     flex-wrap: wrap;
+    background-color: #1D3557;
+    margin-top: 4rem;
 }
 .footer-subscription{
     display: flex;
@@ -11,4 +13,20 @@
     justify-content: center;
     align-self: center;
     margin-bottom: 24px;
+}
+.footer-input{
+    padding: 0.4rem;
+    border-radius: 5px;
+    outline-color: #F1FAEE;
+    border: none;
+    background-color: #F1FAEE;
+}
+.footer-item{
+    color: #F1FAEE;
+}
+.social-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }

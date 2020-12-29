@@ -1,0 +1,19 @@
+.tabs-nav{
+    display:  flex;
+    list-style: none;
+    justify-content: space-around;  
+}
+.tabs-nav>li{
+    border-left: 1px solid #1D3557;
+    padding: 1rem;
+}
+.tabs-nav .active{
+    font-weight: bold;
+}
+.tabs-content {
+    min-height: 500px;
+}
+.image-about{
+    height: auto;
+    width: 80%;
+}

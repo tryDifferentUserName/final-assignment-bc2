@@ -1,54 +1,29 @@
-
-import { useState, useEffect } from "react";
+import useAxiosGet from '../Hooks/useAxiosGet';
 
 function Reviews() {
-    const [reviews, setReviews] = useState({
-        data: [],
-        loading: true
-    });
-
-    const loadReviews = async () => {
-        return new Promise((res, rej) => {
-            setTimeout(() => {
-                setReviews({
-                    data: [
-                        { _id: '1', email: 'foo@bar,com', message: 'bar' },
-                        { _id: '2', email: 'bar@foo.com', message: 'foo' }
-                    ],
-                    loading: false,
-                })
-                res();
-            }, 2000)
-        })
-    }
-
-    useEffect(() => {
-        loadReviews();
-    }, [])
-
+    const reviews = useAxiosGet('reviews');
     let content = '';
     if (reviews.loading) {
         content = <h4>Loading...</h4>
-    } else if (reviews.data.length === 0) {
-        content = <h4>There are no reviews for this product :(</h4>
+    }
+    else if (reviews.data.length === 0) {
+        content = <h3 className="pl-5">There are no reviews for this product :(</h3>
 
-    } else {
+    }
+    else {
+        // let formatedDate = createdAt().moment().format('[Posted on: ] LLL');
         content = (
-            <ul className="list-group">
-                {reviews.data.map((review) => <li key={review._id}> {review.email} {review.message}</li>)}
-            </ul>
+            <div>
+                {reviews.data.map((review) => <li className="list-group border m-1 p-2" key={review._id}>
+                    <strong>{review.email}, {review.createdAt}</strong>
+                    <br />
+                    {review.message}</li>)}
+            </div>
         );
     }
     return (
         <div>
-            <div className="container">
-                <div className="row">
-                    <div className="col">
-                        {content}
-                    </div>
-                </div>
-
-            </div>
+            {content}
         </div>
     )
 }

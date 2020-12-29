@@ -1,8 +1,5 @@
 import React from "react";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { fabfacebook, fabinstagram } from '@fortawesome/free-solid-svg-icons'
-
-
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import './Footer.css'
 
@@ -16,28 +13,25 @@ function Footer() {
                     <div className="input-areas">
                         <form>
                             <input type="email" name="email" placeholder="Write your email..." className="footer-input" />
-                            <button class="btn btn-outline-dark mb-3">Subscribe</button>
+                            <button class="btn btn-outline-light mb-2 ml-2">Subscribe</button>
                         </form>
                     </div>
                 </section>
             </div>
             <div className="footer-item">
                 <div>
-                    <div>
-                        <h2>Follow</h2>
-                        <Link to='/'></Link>
-                        <Link to='/'></Link>
-                        <Link to='/'></Link>
+                    <div className="social-icons">
+                        <h5>Connect with us</h5>
+                        <div><Link to='/'><FaFacebook size="2em" color="honeydew" /></Link></div><br />
+                        <div><Link to='/'><FaInstagram size="2em" color="honeydew" /></Link></div>
                     </div>
                 </div>
             </div>
             <div className="footer-item">
                 <div>
                     <div>
-                        <h2>Contact</h2>
-                        <Link to='/'></Link>
-                        <Link to='/'></Link>
-                        <Link to='/'></Link>
+                        <h5>Contacts</h5>
+                        <Link to='/'>hello@veritas.com</Link>
                     </div>
                 </div>
             </div>

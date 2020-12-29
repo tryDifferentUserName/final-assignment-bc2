@@ -4,17 +4,16 @@
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     border-radius: 10px;
-    height: 800px;
+    height: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 5px;
     position: relative;
-    background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
+    background: #A8DADC;
   }
     
   .form-success {
     text-align: center;
-    font-size: 24px;
     margin-top: 80px;
     color: #fff;
   }
@@ -48,14 +47,12 @@
   }
   
   .form-inputs p {
-    font-size: 0.8rem;
     margin-top: 0.5rem;
     color: #f00e0e;
   }
   
   .form-label {
     display: inline-block;
-    font-size: 0.8rem;
     margin-bottom: 6px;
     color: #fff;
   }
@@ -72,33 +69,32 @@
   
   .form-input::placeholder {
     color: #595959;
-    font-size: 12px;
   }
   
   .form-input-btn {
     width: 80%;
     height: 50px;
     margin-top: 10px;
-    border-radius: 2px;
+    border: none;
+    border-radius: 5px;
     background: transparent;
-    color: #fff;
-    font-size: 1rem;
-    box-shadow: 5px 5px 8px 2px rgba(255, 255, 255, 0.5);
+    color: #F1FAEE;
+    box-shadow: 01px 2px 5px 0 rgba(255, 255, 255, 0.5);
   }
   
   .form-input-btn:hover {
     cursor: pointer;
-    background: #fff;
-    color: #000;
+    background: #F1FAEE;
+    color: #1D3557;
     transition: all 0.4s ease-out;
-    outline: #fff;
+    outline: #F1FAEE;
     border: none;
   }
   
   .form-input-login {
     font-size: 0.8rem;
     margin-top: 10px;
-    color: #fff;
+    color: #F1FAEE;
     width: 80%;
     text-align: center;
   }

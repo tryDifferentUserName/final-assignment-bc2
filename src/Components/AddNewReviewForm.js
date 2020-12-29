@@ -1,18 +1,22 @@
 import { useState } from "react";
+import AxiosPost from '../Requests/AxiosPost';
+
+
 function AddNewReviewForm() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [loading, setLoading] = useState(false);
-    const [errors, setErrors] = useState(['']);
+    const [errors, setErrors] = useState([]);
 
     const handleEmailChange = event => setEmail(event.target.value);
     const handleMessageChange = event => setMessage(event.target.value);
-    const addNewReview = () => {
+
+    const addNewReview = async () => {
         setLoading(true);
         setErrors([]);
         let errorForSubmit = [];
         if (email === '') {
-            errorForSubmit.push('Whoops you left email field empty!')
+            errorForSubmit.push('Whoops you left this field empty!')
         }
         if (errorForSubmit.length > 0) {
             setErrors(errorForSubmit);
@@ -20,11 +24,14 @@ function AddNewReviewForm() {
             return;
         }
 
-        setTimeout(() => {
-            setLoading(false);
-            setEmail('');
-            setMessage('');
-        }, 2000);
+        await AxiosPost('reviews', {
+            email,
+            message,
+        })
+        setLoading(false);
+        setEmail('');
+        setMessage('');
+
     };
 
     const saveBtnText = loading ? 'Loading...' : 'Add review';
@@ -33,7 +40,7 @@ function AddNewReviewForm() {
         errorsElement = (
             <div className="text-danger">
                 <ul>
-                    {errors.map((error, index) => <li key={index}>{error}</li>)}
+                    {errors.map((error, index) => <li className="list-group" key={index}>{error}</li>)}
                 </ul>
             </div>
         );
@@ -41,17 +48,18 @@ function AddNewReviewForm() {
     return (
         <div>
 
-            <div className="form-group">
-                <label htmlFor="new-review-email">Email</label>
+            <div>
+                <label htmlFor="new-review-email">Name</label>
                 <input value={email} disabled={loading} onChange={handleEmailChange} type="email" className="form-control" id="new-review-email"></input>
                 {errorsElement}
             </div>
-            <div className="form-group">
+            <div>
                 <label htmlFor="new-review-msg">Message</label>
                 <textarea value={message} disabled={loading} onChange={handleMessageChange} className="form-control" id="new-review-msg"></textarea>
+
             </div>
-            <div className="form-group">
-                <button onClick={addNewReview} disabled={loading} className="btn btn-outline-success btn-inverse">{saveBtnText}</button>
+            <div>
+                <button onClick={addNewReview} disabled={loading} className="btn btn btn-outline-dark ">{saveBtnText}</button>
             </div>
         </div>
     )

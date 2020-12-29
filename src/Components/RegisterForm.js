@@ -95,8 +95,6 @@ function RegisterForm({ submitForm }) {
                         <option value="LV">Latvia</option>
                         <option value="EE">Estonia</option>
                         <option value="LT">Lithuania</option>
-                        <option value="GB">Great Britain</option>
-                        <option value="PL">Poland</option>
                     </select>
                     {errors.country && <p>{errors.country}</p>}
                 </div>

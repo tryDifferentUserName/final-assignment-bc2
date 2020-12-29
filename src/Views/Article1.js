@@ -1,27 +1,26 @@
 import React from "react";
-import 'flexboxgrid';
 import ImageFancyBox from "../Components/ImageFancyBox";
 
 const data = [
     {
         id: 1,
         name: "",
-        imgSrc: "/Assets/images/cat.jpg"
+        imgSrc: "/Assets/images/pour@2x.jpg"
     },
     {
         id: 2,
         name: "",
-        imgSrc: "/Assets/images/img-2.jpg"
+        imgSrc: "/Assets/images/label@2x.jpg"
     },
     {
         id: 3,
         name: "",
-        imgSrc: "/Assets/images/cat.jpg"
+        imgSrc: "/Assets/images/lifestyle@2x.jpg"
     },
     {
         id: 4,
         name: "",
-        imgSrc: "/Assets/images/cat.jpg"
+        imgSrc: "/Assets/images/hero@2x.jpg"
     },
 
 ]

@@ -6,7 +6,7 @@ function CardItem(props) {
         <>
             <li className="cards__item">
                 <Link
-                    className="cards__item__link" to='{props.path}'>
+                    className="cards__item__link" to={props.path}>
                     <img src={props.src} alt="" className="cards__item__img" />
                     <div className="cards__item__info">
                         <h5 className="cards__item__title">{props.title}</h5>

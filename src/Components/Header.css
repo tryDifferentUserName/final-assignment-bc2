@@ -1,9 +1,13 @@
 header{
-    padding: 4rem 0 2rem 0;
+    padding: 2rem 0 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 20px 10%;
+    background-color: #A8DADC;
+}
+.navigation-style{
+    margin-bottom: 3rem;
 }
 .logo{
     cursor: pointer;
@@ -12,4 +16,10 @@ header{
     display: inline-block;
     padding: 0 20px;
     transition: all 0.3s ease 0s;
+}
+.logo{
+    width: 100px;
+}
+.nav__links>a{
+    color: #1D3557 !important;
 }

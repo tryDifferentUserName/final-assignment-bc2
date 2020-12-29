@@ -8,6 +8,7 @@ import Signup from "./Views/Signup";
 import Articles from "./Views/Articles";
 import ReviewForm from "./Views/ReviewForm";
 import Article1 from "./Views/Article1";
+import '../src/Assets/css/App.css';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
             <Route path='/Article1'>
               <Article1 />
             </Route>
-            <Route path='/'>
+            <Route path='/ReviewForm'>
               <ReviewForm />
             </Route>
             <Route path='/Signup'>
