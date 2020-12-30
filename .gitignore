@@ -24,4 +24,5 @@ yarn-error.log*
 
 .env
 node_modules
+package-lock.json
 api_key='AIzaSyAdpOoSaQq17tanEsp1l8R7j9KvC6MOixw'
